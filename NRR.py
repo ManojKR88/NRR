@@ -24,10 +24,10 @@ for i in range(2,m_row+1):
         overs_played += cell_obj.value
     else:
         if type(cell_obj.value) is float:
-            round_ = math.floor(cell_obj.value)
-            decimal_ = (cell_obj.value - round_) * 10
-            value_ = decimal_ / 6
-            overs_played += round_ + value_
+            over = math.floor(cell_obj.value)
+            balls = (cell_obj.value - over) * 10
+            value_ = balls / 6
+            overs_played += over + value_
         else:
             overs_played += cell_obj.value
 # print(overs_played)
@@ -48,10 +48,10 @@ for i in range(2,m_row+1):
         overs_bowled += cell_obj1.value
     else:
         if type(cell_obj1.value) is float:
-            round_1 = math.floor(cell_obj1.value)
-            decimal_1 = (cell_obj1.value - round_1) * 10
-            value_1 = decimal_1 / 6
-            overs_bowled += round_1 + value_1
+            over_ = math.floor(cell_obj1.value)
+            balls_ = (cell_obj1.value - over_) * 10
+            value_1 = balls_ / 6
+            overs_bowled += over_ + value_1
         else:
             overs_bowled += cell_obj1.value
 # print(overs_bowled)
